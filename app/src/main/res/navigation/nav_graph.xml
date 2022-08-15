@@ -12,7 +12,11 @@
         tools:layout="@layout/fr_home">
         <action
             android:id="@+id/action_FRHome_to_FRSecond"
-            app:destination="@id/FRSecond" />
+            app:destination="@id/FRSecond"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
     </fragment>
     <fragment
         android:id="@+id/FRSecond"

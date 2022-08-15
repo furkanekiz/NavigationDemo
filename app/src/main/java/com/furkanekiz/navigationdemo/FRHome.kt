@@ -25,11 +25,11 @@ class FRHome : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fr_home, container, false)
 
         binding.btnFRHome.setOnClickListener {
-            if (!TextUtils.isEmpty(binding.etFRHome.text.toString())){
+            if (!TextUtils.isEmpty(binding.etFRHome.text.toString())) {
                 val bundle: Bundle = bundleOf("user_input" to binding.etFRHome.text.toString())
-                it.findNavController().navigate(R.id.action_FRHome_to_FRSecond,bundle)
-            }else{
-                Toast.makeText(activity,"Please insert your name",Toast.LENGTH_LONG).show()
+                it.findNavController().navigate(R.id.action_FRHome_to_FRSecond, bundle)
+            } else {
+                Toast.makeText(activity, "Please insert your name", Toast.LENGTH_LONG).show()
             }
         }
 
