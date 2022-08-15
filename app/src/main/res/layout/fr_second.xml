@@ -16,7 +16,8 @@
             android:layout_marginHorizontal="@dimen/dp_50"
             android:layout_marginTop="@dimen/dp_50"
             android:textSize="@dimen/sp_30"
-            tools:text="Test" />
+            tools:text="Test"
+            android:gravity="center"/>
 
 
     </LinearLayout>
